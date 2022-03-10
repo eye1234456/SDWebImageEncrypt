@@ -7,6 +7,7 @@
 二、图片加解密
 ----
 ###SDWebImage 5.x
+https://github.com/eye1234456/SDWebImageEncrypt/tree/sdwebimage_5.x
 podfile
 ```
   pod 'SDWebImage', '~> 5.0'
@@ -134,4 +135,17 @@ podfile
 ```
 ----
 ###SDWebImage 4.x
+https://github.com/eye1234456/SDWebImageEncrypt/tree/sdwebimage_4.x
 大同小异，只是一些类名和方法不一致
+podfile
+```
+  pod 'SDWebImage', '~> 4.4.8'
+  pod 'SDWebImage/WebP'
+  pod 'SDWebImage/GIF'
+```
+重写如下的类
+`SDWebImageDownloaderOperation`
+`SDWebImageImageIOCoder`
+`SDWebImageGIFCoder`
+`SDWebImageWebPCoder`
+

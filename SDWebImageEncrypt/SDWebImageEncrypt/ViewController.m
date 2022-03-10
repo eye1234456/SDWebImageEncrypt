@@ -7,8 +7,7 @@
 
 #import "ViewController.h"
 #import <SDWebImage/UIImageView+WebCache.h>
-#import <SDWebImage/SDAnimatedImageView.h>
-#import <YYWebImage/YYWebImage.h>
+#import <FLAnimatedImage/FLAnimatedImageView.h>
 
 typedef NS_ENUM(NSInteger, LoadType) {
     LoadTypeLocal, // 加载本地图片
@@ -28,9 +27,7 @@ typedef NS_ENUM(NSInteger, LoadType) {
     [self.view addSubview:self.tableView];
     // 未加密的图片
     NSArray *list = @[@"SDWebImage-originImage-不加密图片"
-                      ,@"SDWebImage-encryptImage-加密图片"
-                      ,@"YYImage-originImage-不加密图片"
-                      ,@"YYImage-encryptImage-加密图片"];
+                      ,@"SDWebImage-encryptImage-加密图片"];
     for (NSString *title in list) {
         NSMutableArray *list = [NSMutableArray array];
         if ([title containsString:@"encryptImage"]) {
@@ -89,7 +86,7 @@ typedef NS_ENUM(NSInteger, LoadType) {
         UIImageView *imageView = cell.imageView;
         imageView = [cell.contentView viewWithTag:100];
         if (imageView == nil) {
-            imageView = [[SDAnimatedImageView alloc] initWithFrame:CGRectMake(0, 0, 200, 100)];
+            imageView = [[FLAnimatedImageView alloc] initWithFrame:CGRectMake(0, 0, 200, 100)];
             imageView.tag = 100;
             [cell.contentView addSubview:imageView];
         }
@@ -98,24 +95,8 @@ typedef NS_ENUM(NSInteger, LoadType) {
         cell.textLabel.numberOfLines = 0;
         cell.textLabel.font = [UIFont systemFontOfSize:10];
         return cell;
-    }else {
-        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"UITableViewCell_YY" forIndexPath:indexPath];
-        cell.selectionStyle = UITableViewCellSelectionStyleNone;
-        // 使用YYImage 加载
-        UIImageView *imageView = cell.imageView;
-        // YYImageView, 不能适配既可以展示动图，又展示静态图的情况
-//        imageView = [cell.contentView viewWithTag:101];
-//        if (imageView == nil) {
-//            imageView = [[YYAnimatedImageView alloc] initWithFrame:CGRectMake(0, 0, 200, 100)];
-//            imageView.tag = 101;
-//            [cell.contentView addSubview:imageView];
-//        }
-        [imageView yy_setImageWithURL:[NSURL URLWithString:urlStr] placeholder:[UIImage imageNamed:@"placeholder"]];
-        cell.textLabel.text = urlStr;
-        cell.textLabel.numberOfLines = 0;
-        cell.textLabel.font = [UIFont systemFontOfSize:10];
-        return cell;
     }
+    return nil;
     
 }
 

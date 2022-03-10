@@ -6,7 +6,7 @@
 //
 
 #import "FEDecryptSDWebImageDownloaderOperation.h"
-#import <SDWebImage/SDImageCodersManager.h>
+#import <SDWebImage/SDWebImageCodersManager.h>
 #import "AESKeyHeader.h"
 #import "NSData+FE.h"
 
@@ -22,12 +22,12 @@
         // 默认对所有数据进行解密尝试
         __block NSData *decodeData = [imageData fe_aesDecryptWithKey:kAESKey];
         // 如果解密后的数据不支持解码，则说明不需要解密
-        if (![[SDImageCodersManager sharedManager] canDecodeFromData:decodeData]) {
+        if (![SDWebImageCodersManager.sharedInstance canDecodeFromData:decodeData]) {
             [super URLSession:session task:task didCompleteWithError:error];
             return;
         }
         // 对解密的数据解码成图片，如果解码失败，则说明不需要解密
-        UIImage *image = [[SDImageCodersManager sharedManager] decodedImageWithData:decodeData options:nil];
+        UIImage *image = [SDWebImageCodersManager.sharedInstance decodedImageWithData:decodeData];
         if (image == nil) {
             [super URLSession:session task:task didCompleteWithError:error];
             return;

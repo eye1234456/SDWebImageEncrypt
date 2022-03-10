@@ -24,18 +24,18 @@
     return [super canDecodeFromData:data];
 }
 
-- (UIImage *)decodedImageWithData:(NSData *)data options:(nullable SDImageCoderOptions *)options {
+- (UIImage *)decodedImageWithData:(NSData *)data {
     if (!data) {
         return nil;
     }
     // 默认对所有数据进行解密尝试
     __block NSData *decodeData = [data fe_aesDecryptWithKey:kAESKey];
     // 如果使用解密的数据解码成功，则表示图片是需要解密的，返回解密后的图片
-    UIImage *image = [super decodedImageWithData:decodeData options:options];
+    UIImage *image = [super decodedImageWithData:decodeData];
     if (image != nil) {
         return image;
     }
     // 解密后的图片解码失败，则直接使用原始数据进行解码
-    return [super decodedImageWithData:data options:options];
+    return [super decodedImageWithData:data];
 }
 @end

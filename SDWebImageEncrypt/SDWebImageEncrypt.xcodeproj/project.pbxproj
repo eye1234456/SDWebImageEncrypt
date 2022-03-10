@@ -21,7 +21,6 @@
 		57DB84E727D9E0920093DA59 /* FEDecryptSDWebImageDownloaderOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 57DB84E627D9E0910093DA59 /* FEDecryptSDWebImageDownloaderOperation.m */; };
 		57DB84EC27D9F6DC0093DA59 /* FEDecryptSDImageIOCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 57DB84EB27D9F6DC0093DA59 /* FEDecryptSDImageIOCoder.m */; };
 		57DB84EF27D9FB050093DA59 /* FESDImageGIFCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 57DB84EE27D9FB050093DA59 /* FESDImageGIFCoder.m */; };
-		57DB84F227D9FB150093DA59 /* FESDImageAPNGCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 57DB84F127D9FB150093DA59 /* FESDImageAPNGCoder.m */; };
 		57DB84F527D9FB330093DA59 /* FESDImageWebPCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 57DB84F427D9FB330093DA59 /* FESDImageWebPCoder.m */; };
 		5F5FA9378DBB3550E5B7EFD4 /* Pods_SDWebImageEncryptTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0607911ECF1F6C7E41CA7DE5 /* Pods_SDWebImageEncryptTests.framework */; };
 		7C7C4ED0CF6630AE5C94AAB3 /* Pods_SDWebImageEncrypt_SDWebImageEncryptUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93DD695732C43771526F502C /* Pods_SDWebImageEncrypt_SDWebImageEncryptUITests.framework */; };
@@ -76,8 +75,6 @@
 		57DB84EB27D9F6DC0093DA59 /* FEDecryptSDImageIOCoder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FEDecryptSDImageIOCoder.m; sourceTree = "<group>"; };
 		57DB84ED27D9FB050093DA59 /* FESDImageGIFCoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FESDImageGIFCoder.h; sourceTree = "<group>"; };
 		57DB84EE27D9FB050093DA59 /* FESDImageGIFCoder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FESDImageGIFCoder.m; sourceTree = "<group>"; };
-		57DB84F027D9FB150093DA59 /* FESDImageAPNGCoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FESDImageAPNGCoder.h; sourceTree = "<group>"; };
-		57DB84F127D9FB150093DA59 /* FESDImageAPNGCoder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FESDImageAPNGCoder.m; sourceTree = "<group>"; };
 		57DB84F327D9FB330093DA59 /* FESDImageWebPCoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FESDImageWebPCoder.h; sourceTree = "<group>"; };
 		57DB84F427D9FB330093DA59 /* FESDImageWebPCoder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FESDImageWebPCoder.m; sourceTree = "<group>"; };
 		8038C56DE3117F42D9DB4C36 /* Pods-SDWebImageEncrypt-SDWebImageEncryptUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDWebImageEncrypt-SDWebImageEncryptUITests.debug.xcconfig"; path = "Target Support Files/Pods-SDWebImageEncrypt-SDWebImageEncryptUITests/Pods-SDWebImageEncrypt-SDWebImageEncryptUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -213,8 +210,6 @@
 				57DB84EB27D9F6DC0093DA59 /* FEDecryptSDImageIOCoder.m */,
 				57DB84ED27D9FB050093DA59 /* FESDImageGIFCoder.h */,
 				57DB84EE27D9FB050093DA59 /* FESDImageGIFCoder.m */,
-				57DB84F027D9FB150093DA59 /* FESDImageAPNGCoder.h */,
-				57DB84F127D9FB150093DA59 /* FESDImageAPNGCoder.m */,
 				57DB84F327D9FB330093DA59 /* FESDImageWebPCoder.h */,
 				57DB84F427D9FB330093DA59 /* FESDImageWebPCoder.m */,
 			);
@@ -483,7 +478,6 @@
 				57DB84AA27D9CD4C0093DA59 /* AppDelegate.m in Sources */,
 				57DB84F527D9FB330093DA59 /* FESDImageWebPCoder.m in Sources */,
 				57DB84E727D9E0920093DA59 /* FEDecryptSDWebImageDownloaderOperation.m in Sources */,
-				57DB84F227D9FB150093DA59 /* FESDImageAPNGCoder.m in Sources */,
 				57DB84BB27D9CD550093DA59 /* main.m in Sources */,
 				57DB84AD27D9CD4C0093DA59 /* SceneDelegate.m in Sources */,
 				57DB84EF27D9FB050093DA59 /* FESDImageGIFCoder.m in Sources */,

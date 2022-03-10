@@ -5,11 +5,11 @@
 //  Created by Flow on 3/10/22.
 //
 
-#import <SDWebImageWebPCoder/SDWebImageWebPCoder.h>
+#import <SDWebImage/SDWebImageWebPCoder.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface FESDImageWebPCoder : SDImageWebPCoder
+@interface FESDImageWebPCoder : SDWebImageWebPCoder
 
 @end
 
