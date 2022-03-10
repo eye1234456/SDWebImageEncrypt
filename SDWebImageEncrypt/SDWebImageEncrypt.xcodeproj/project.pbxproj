@@ -1,0 +1,772 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		57DB84AA27D9CD4C0093DA59 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 57DB84A927D9CD4C0093DA59 /* AppDelegate.m */; };
+		57DB84AD27D9CD4C0093DA59 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 57DB84AC27D9CD4C0093DA59 /* SceneDelegate.m */; };
+		57DB84B027D9CD4C0093DA59 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57DB84AF27D9CD4C0093DA59 /* ViewController.m */; };
+		57DB84B327D9CD4C0093DA59 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57DB84B127D9CD4C0093DA59 /* Main.storyboard */; };
+		57DB84B527D9CD550093DA59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57DB84B427D9CD550093DA59 /* Assets.xcassets */; };
+		57DB84B827D9CD550093DA59 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57DB84B627D9CD550093DA59 /* LaunchScreen.storyboard */; };
+		57DB84BB27D9CD550093DA59 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 57DB84BA27D9CD550093DA59 /* main.m */; };
+		57DB84C527D9CD560093DA59 /* SDWebImageEncryptTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 57DB84C427D9CD560093DA59 /* SDWebImageEncryptTests.m */; };
+		57DB84CF27D9CD560093DA59 /* SDWebImageEncryptUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 57DB84CE27D9CD560093DA59 /* SDWebImageEncryptUITests.m */; };
+		57DB84D127D9CD560093DA59 /* SDWebImageEncryptUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 57DB84D027D9CD560093DA59 /* SDWebImageEncryptUITestsLaunchTests.m */; };
+		57DB84E027D9CF950093DA59 /* TypeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 57DB84DF27D9CF950093DA59 /* TypeModel.m */; };
+		57DB84E327D9D7810093DA59 /* NSData+FE.m in Sources */ = {isa = PBXBuildFile; fileRef = 57DB84E227D9D7810093DA59 /* NSData+FE.m */; };
+		5F5FA9378DBB3550E5B7EFD4 /* Pods_SDWebImageEncryptTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0607911ECF1F6C7E41CA7DE5 /* Pods_SDWebImageEncryptTests.framework */; };
+		7C7C4ED0CF6630AE5C94AAB3 /* Pods_SDWebImageEncrypt_SDWebImageEncryptUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93DD695732C43771526F502C /* Pods_SDWebImageEncrypt_SDWebImageEncryptUITests.framework */; };
+		8AC4DF0BB59C8EF05F301A34 /* Pods_SDWebImageEncrypt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF5182D1EEDBE21A6FF3373F /* Pods_SDWebImageEncrypt.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		57DB84C127D9CD550093DA59 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 57DB849D27D9CD4C0093DA59 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 57DB84A427D9CD4C0093DA59;
+			remoteInfo = SDWebImageEncrypt;
+		};
+		57DB84CB27D9CD560093DA59 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 57DB849D27D9CD4C0093DA59 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 57DB84A427D9CD4C0093DA59;
+			remoteInfo = SDWebImageEncrypt;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0607911ECF1F6C7E41CA7DE5 /* Pods_SDWebImageEncryptTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SDWebImageEncryptTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		20BB78BA6D67736AA597E0C6 /* Pods-SDWebImageEncrypt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDWebImageEncrypt.debug.xcconfig"; path = "Target Support Files/Pods-SDWebImageEncrypt/Pods-SDWebImageEncrypt.debug.xcconfig"; sourceTree = "<group>"; };
+		25CB50D30AE3C460D90536E7 /* Pods-SDWebImageEncryptTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDWebImageEncryptTests.debug.xcconfig"; path = "Target Support Files/Pods-SDWebImageEncryptTests/Pods-SDWebImageEncryptTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4CC7FFB0A2AE3A875D3C1146 /* Pods-SDWebImageEncryptTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDWebImageEncryptTests.release.xcconfig"; path = "Target Support Files/Pods-SDWebImageEncryptTests/Pods-SDWebImageEncryptTests.release.xcconfig"; sourceTree = "<group>"; };
+		57DB84A527D9CD4C0093DA59 /* SDWebImageEncrypt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SDWebImageEncrypt.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		57DB84A827D9CD4C0093DA59 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		57DB84A927D9CD4C0093DA59 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		57DB84AB27D9CD4C0093DA59 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		57DB84AC27D9CD4C0093DA59 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		57DB84AE27D9CD4C0093DA59 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		57DB84AF27D9CD4C0093DA59 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		57DB84B227D9CD4C0093DA59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		57DB84B427D9CD550093DA59 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		57DB84B727D9CD550093DA59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		57DB84B927D9CD550093DA59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57DB84BA27D9CD550093DA59 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		57DB84C027D9CD550093DA59 /* SDWebImageEncryptTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SDWebImageEncryptTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		57DB84C427D9CD560093DA59 /* SDWebImageEncryptTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDWebImageEncryptTests.m; sourceTree = "<group>"; };
+		57DB84CA27D9CD560093DA59 /* SDWebImageEncryptUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SDWebImageEncryptUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		57DB84CE27D9CD560093DA59 /* SDWebImageEncryptUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDWebImageEncryptUITests.m; sourceTree = "<group>"; };
+		57DB84D027D9CD560093DA59 /* SDWebImageEncryptUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDWebImageEncryptUITestsLaunchTests.m; sourceTree = "<group>"; };
+		57DB84DE27D9CF950093DA59 /* TypeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TypeModel.h; sourceTree = "<group>"; };
+		57DB84DF27D9CF950093DA59 /* TypeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TypeModel.m; sourceTree = "<group>"; };
+		57DB84E127D9D7810093DA59 /* NSData+FE.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+FE.h"; sourceTree = "<group>"; };
+		57DB84E227D9D7810093DA59 /* NSData+FE.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+FE.m"; sourceTree = "<group>"; };
+		8038C56DE3117F42D9DB4C36 /* Pods-SDWebImageEncrypt-SDWebImageEncryptUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDWebImageEncrypt-SDWebImageEncryptUITests.debug.xcconfig"; path = "Target Support Files/Pods-SDWebImageEncrypt-SDWebImageEncryptUITests/Pods-SDWebImageEncrypt-SDWebImageEncryptUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		93DD695732C43771526F502C /* Pods_SDWebImageEncrypt_SDWebImageEncryptUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SDWebImageEncrypt_SDWebImageEncryptUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE565C25ED36693BE5DEFA5C /* Pods-SDWebImageEncrypt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDWebImageEncrypt.release.xcconfig"; path = "Target Support Files/Pods-SDWebImageEncrypt/Pods-SDWebImageEncrypt.release.xcconfig"; sourceTree = "<group>"; };
+		ECCF1A02236C4E73361ECA6F /* Pods-SDWebImageEncrypt-SDWebImageEncryptUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDWebImageEncrypt-SDWebImageEncryptUITests.release.xcconfig"; path = "Target Support Files/Pods-SDWebImageEncrypt-SDWebImageEncryptUITests/Pods-SDWebImageEncrypt-SDWebImageEncryptUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FF5182D1EEDBE21A6FF3373F /* Pods_SDWebImageEncrypt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SDWebImageEncrypt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		57DB84A227D9CD4C0093DA59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AC4DF0BB59C8EF05F301A34 /* Pods_SDWebImageEncrypt.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57DB84BD27D9CD550093DA59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F5FA9378DBB3550E5B7EFD4 /* Pods_SDWebImageEncryptTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57DB84C727D9CD560093DA59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C7C4ED0CF6630AE5C94AAB3 /* Pods_SDWebImageEncrypt_SDWebImageEncryptUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3957C7384B1C3C18C5E5A9BF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				20BB78BA6D67736AA597E0C6 /* Pods-SDWebImageEncrypt.debug.xcconfig */,
+				AE565C25ED36693BE5DEFA5C /* Pods-SDWebImageEncrypt.release.xcconfig */,
+				8038C56DE3117F42D9DB4C36 /* Pods-SDWebImageEncrypt-SDWebImageEncryptUITests.debug.xcconfig */,
+				ECCF1A02236C4E73361ECA6F /* Pods-SDWebImageEncrypt-SDWebImageEncryptUITests.release.xcconfig */,
+				25CB50D30AE3C460D90536E7 /* Pods-SDWebImageEncryptTests.debug.xcconfig */,
+				4CC7FFB0A2AE3A875D3C1146 /* Pods-SDWebImageEncryptTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		57DB849C27D9CD4B0093DA59 = {
+			isa = PBXGroup;
+			children = (
+				57DB84A727D9CD4C0093DA59 /* SDWebImageEncrypt */,
+				57DB84C327D9CD560093DA59 /* SDWebImageEncryptTests */,
+				57DB84CD27D9CD560093DA59 /* SDWebImageEncryptUITests */,
+				57DB84A627D9CD4C0093DA59 /* Products */,
+				3957C7384B1C3C18C5E5A9BF /* Pods */,
+				AED83BC41161B0373E248150 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		57DB84A627D9CD4C0093DA59 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				57DB84A527D9CD4C0093DA59 /* SDWebImageEncrypt.app */,
+				57DB84C027D9CD550093DA59 /* SDWebImageEncryptTests.xctest */,
+				57DB84CA27D9CD560093DA59 /* SDWebImageEncryptUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		57DB84A727D9CD4C0093DA59 /* SDWebImageEncrypt */ = {
+			isa = PBXGroup;
+			children = (
+				57DB84DD27D9CF7F0093DA59 /* Model */,
+				57DB84A827D9CD4C0093DA59 /* AppDelegate.h */,
+				57DB84A927D9CD4C0093DA59 /* AppDelegate.m */,
+				57DB84AB27D9CD4C0093DA59 /* SceneDelegate.h */,
+				57DB84AC27D9CD4C0093DA59 /* SceneDelegate.m */,
+				57DB84AE27D9CD4C0093DA59 /* ViewController.h */,
+				57DB84AF27D9CD4C0093DA59 /* ViewController.m */,
+				57DB84B127D9CD4C0093DA59 /* Main.storyboard */,
+				57DB84B427D9CD550093DA59 /* Assets.xcassets */,
+				57DB84B627D9CD550093DA59 /* LaunchScreen.storyboard */,
+				57DB84B927D9CD550093DA59 /* Info.plist */,
+				57DB84BA27D9CD550093DA59 /* main.m */,
+				57DB84E127D9D7810093DA59 /* NSData+FE.h */,
+				57DB84E227D9D7810093DA59 /* NSData+FE.m */,
+			);
+			path = SDWebImageEncrypt;
+			sourceTree = "<group>";
+		};
+		57DB84C327D9CD560093DA59 /* SDWebImageEncryptTests */ = {
+			isa = PBXGroup;
+			children = (
+				57DB84C427D9CD560093DA59 /* SDWebImageEncryptTests.m */,
+			);
+			path = SDWebImageEncryptTests;
+			sourceTree = "<group>";
+		};
+		57DB84CD27D9CD560093DA59 /* SDWebImageEncryptUITests */ = {
+			isa = PBXGroup;
+			children = (
+				57DB84CE27D9CD560093DA59 /* SDWebImageEncryptUITests.m */,
+				57DB84D027D9CD560093DA59 /* SDWebImageEncryptUITestsLaunchTests.m */,
+			);
+			path = SDWebImageEncryptUITests;
+			sourceTree = "<group>";
+		};
+		57DB84DD27D9CF7F0093DA59 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				57DB84DE27D9CF950093DA59 /* TypeModel.h */,
+				57DB84DF27D9CF950093DA59 /* TypeModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AED83BC41161B0373E248150 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FF5182D1EEDBE21A6FF3373F /* Pods_SDWebImageEncrypt.framework */,
+				93DD695732C43771526F502C /* Pods_SDWebImageEncrypt_SDWebImageEncryptUITests.framework */,
+				0607911ECF1F6C7E41CA7DE5 /* Pods_SDWebImageEncryptTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		57DB84A427D9CD4C0093DA59 /* SDWebImageEncrypt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 57DB84D427D9CD560093DA59 /* Build configuration list for PBXNativeTarget "SDWebImageEncrypt" */;
+			buildPhases = (
+				5C535DF2372272A05FD3CC90 /* [CP] Check Pods Manifest.lock */,
+				57DB84A127D9CD4C0093DA59 /* Sources */,
+				57DB84A227D9CD4C0093DA59 /* Frameworks */,
+				57DB84A327D9CD4C0093DA59 /* Resources */,
+				1527EF45E17BE2715A40F098 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SDWebImageEncrypt;
+			productName = SDWebImageEncrypt;
+			productReference = 57DB84A527D9CD4C0093DA59 /* SDWebImageEncrypt.app */;
+			productType = "com.apple.product-type.application";
+		};
+		57DB84BF27D9CD550093DA59 /* SDWebImageEncryptTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 57DB84D727D9CD560093DA59 /* Build configuration list for PBXNativeTarget "SDWebImageEncryptTests" */;
+			buildPhases = (
+				D49FCD863E24774FDB07FF65 /* [CP] Check Pods Manifest.lock */,
+				57DB84BC27D9CD550093DA59 /* Sources */,
+				57DB84BD27D9CD550093DA59 /* Frameworks */,
+				57DB84BE27D9CD550093DA59 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				57DB84C227D9CD550093DA59 /* PBXTargetDependency */,
+			);
+			name = SDWebImageEncryptTests;
+			productName = SDWebImageEncryptTests;
+			productReference = 57DB84C027D9CD550093DA59 /* SDWebImageEncryptTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		57DB84C927D9CD560093DA59 /* SDWebImageEncryptUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 57DB84DA27D9CD560093DA59 /* Build configuration list for PBXNativeTarget "SDWebImageEncryptUITests" */;
+			buildPhases = (
+				FD38B203B6A9ADF63320F5BB /* [CP] Check Pods Manifest.lock */,
+				57DB84C627D9CD560093DA59 /* Sources */,
+				57DB84C727D9CD560093DA59 /* Frameworks */,
+				57DB84C827D9CD560093DA59 /* Resources */,
+				AB1F7D59399EA4A732CD6F2B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				57DB84CC27D9CD560093DA59 /* PBXTargetDependency */,
+			);
+			name = SDWebImageEncryptUITests;
+			productName = SDWebImageEncryptUITests;
+			productReference = 57DB84CA27D9CD560093DA59 /* SDWebImageEncryptUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		57DB849D27D9CD4C0093DA59 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					57DB84A427D9CD4C0093DA59 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					57DB84BF27D9CD550093DA59 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 57DB84A427D9CD4C0093DA59;
+					};
+					57DB84C927D9CD560093DA59 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 57DB84A427D9CD4C0093DA59;
+					};
+				};
+			};
+			buildConfigurationList = 57DB84A027D9CD4C0093DA59 /* Build configuration list for PBXProject "SDWebImageEncrypt" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 57DB849C27D9CD4B0093DA59;
+			productRefGroup = 57DB84A627D9CD4C0093DA59 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				57DB84A427D9CD4C0093DA59 /* SDWebImageEncrypt */,
+				57DB84BF27D9CD550093DA59 /* SDWebImageEncryptTests */,
+				57DB84C927D9CD560093DA59 /* SDWebImageEncryptUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		57DB84A327D9CD4C0093DA59 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57DB84B827D9CD550093DA59 /* LaunchScreen.storyboard in Resources */,
+				57DB84B527D9CD550093DA59 /* Assets.xcassets in Resources */,
+				57DB84B327D9CD4C0093DA59 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57DB84BE27D9CD550093DA59 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57DB84C827D9CD560093DA59 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1527EF45E17BE2715A40F098 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SDWebImageEncrypt/Pods-SDWebImageEncrypt-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SDWebImageEncrypt/Pods-SDWebImageEncrypt-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SDWebImageEncrypt/Pods-SDWebImageEncrypt-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5C535DF2372272A05FD3CC90 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SDWebImageEncrypt-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB1F7D59399EA4A732CD6F2B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SDWebImageEncrypt-SDWebImageEncryptUITests/Pods-SDWebImageEncrypt-SDWebImageEncryptUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SDWebImageEncrypt-SDWebImageEncryptUITests/Pods-SDWebImageEncrypt-SDWebImageEncryptUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SDWebImageEncrypt-SDWebImageEncryptUITests/Pods-SDWebImageEncrypt-SDWebImageEncryptUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D49FCD863E24774FDB07FF65 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SDWebImageEncryptTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD38B203B6A9ADF63320F5BB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SDWebImageEncrypt-SDWebImageEncryptUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		57DB84A127D9CD4C0093DA59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57DB84B027D9CD4C0093DA59 /* ViewController.m in Sources */,
+				57DB84E327D9D7810093DA59 /* NSData+FE.m in Sources */,
+				57DB84AA27D9CD4C0093DA59 /* AppDelegate.m in Sources */,
+				57DB84E027D9CF950093DA59 /* TypeModel.m in Sources */,
+				57DB84BB27D9CD550093DA59 /* main.m in Sources */,
+				57DB84AD27D9CD4C0093DA59 /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57DB84BC27D9CD550093DA59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57DB84C527D9CD560093DA59 /* SDWebImageEncryptTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57DB84C627D9CD560093DA59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57DB84D127D9CD560093DA59 /* SDWebImageEncryptUITestsLaunchTests.m in Sources */,
+				57DB84CF27D9CD560093DA59 /* SDWebImageEncryptUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		57DB84C227D9CD550093DA59 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 57DB84A427D9CD4C0093DA59 /* SDWebImageEncrypt */;
+			targetProxy = 57DB84C127D9CD550093DA59 /* PBXContainerItemProxy */;
+		};
+		57DB84CC27D9CD560093DA59 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 57DB84A427D9CD4C0093DA59 /* SDWebImageEncrypt */;
+			targetProxy = 57DB84CB27D9CD560093DA59 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		57DB84B127D9CD4C0093DA59 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				57DB84B227D9CD4C0093DA59 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		57DB84B627D9CD550093DA59 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				57DB84B727D9CD550093DA59 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		57DB84D227D9CD560093DA59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		57DB84D327D9CD560093DA59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		57DB84D527D9CD560093DA59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20BB78BA6D67736AA597E0C6 /* Pods-SDWebImageEncrypt.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SDWebImageEncrypt/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.eye.SDWebImageEncrypt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		57DB84D627D9CD560093DA59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE565C25ED36693BE5DEFA5C /* Pods-SDWebImageEncrypt.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SDWebImageEncrypt/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.eye.SDWebImageEncrypt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		57DB84D827D9CD560093DA59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25CB50D30AE3C460D90536E7 /* Pods-SDWebImageEncryptTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.eye.SDWebImageEncryptTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SDWebImageEncrypt.app/SDWebImageEncrypt";
+			};
+			name = Debug;
+		};
+		57DB84D927D9CD560093DA59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CC7FFB0A2AE3A875D3C1146 /* Pods-SDWebImageEncryptTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.eye.SDWebImageEncryptTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SDWebImageEncrypt.app/SDWebImageEncrypt";
+			};
+			name = Release;
+		};
+		57DB84DB27D9CD560093DA59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8038C56DE3117F42D9DB4C36 /* Pods-SDWebImageEncrypt-SDWebImageEncryptUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.eye.SDWebImageEncryptUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SDWebImageEncrypt;
+			};
+			name = Debug;
+		};
+		57DB84DC27D9CD560093DA59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECCF1A02236C4E73361ECA6F /* Pods-SDWebImageEncrypt-SDWebImageEncryptUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.eye.SDWebImageEncryptUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SDWebImageEncrypt;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		57DB84A027D9CD4C0093DA59 /* Build configuration list for PBXProject "SDWebImageEncrypt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57DB84D227D9CD560093DA59 /* Debug */,
+				57DB84D327D9CD560093DA59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		57DB84D427D9CD560093DA59 /* Build configuration list for PBXNativeTarget "SDWebImageEncrypt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57DB84D527D9CD560093DA59 /* Debug */,
+				57DB84D627D9CD560093DA59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		57DB84D727D9CD560093DA59 /* Build configuration list for PBXNativeTarget "SDWebImageEncryptTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57DB84D827D9CD560093DA59 /* Debug */,
+				57DB84D927D9CD560093DA59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		57DB84DA27D9CD560093DA59 /* Build configuration list for PBXNativeTarget "SDWebImageEncryptUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57DB84DB27D9CD560093DA59 /* Debug */,
+				57DB84DC27D9CD560093DA59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 57DB849D27D9CD4C0093DA59 /* Project object */;
+}

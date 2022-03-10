@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/Pods-SDWebImageEncrypt-SDWebImageEncryptUITests/Pods-SDWebImageEncrypt-SDWebImageEncryptUITests-frameworks.sh
+${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework
+${BUILT_PRODUCTS_DIR}/YYImage/YYImage.framework

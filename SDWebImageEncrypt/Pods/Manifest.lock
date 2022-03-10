@@ -1,0 +1,24 @@
+PODS:
+  - SDWebImage (5.12.4):
+    - SDWebImage/Core (= 5.12.4)
+  - SDWebImage/Core (5.12.4)
+  - YYImage (1.0.4):
+    - YYImage/Core (= 1.0.4)
+  - YYImage/Core (1.0.4)
+
+DEPENDENCIES:
+  - SDWebImage
+  - YYImage
+
+SPEC REPOS:
+  trunk:
+    - SDWebImage
+    - YYImage
+
+SPEC CHECKSUMS:
+  SDWebImage: 631cf572cc93dfdfe54162e556410a61f1141928
+  YYImage: 1e1b62a9997399593e4b9c4ecfbbabbf1d3f3b54
+
+PODFILE CHECKSUM: 2fa34ff586b9d1c4e2c68841b428f9488448fd40
+
+COCOAPODS: 1.11.2
