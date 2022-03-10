@@ -32,8 +32,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
 //    [self createEncryptImages];
-//    [self configDecryptSDWebImageAtDownloadTime];
-    [self configDecrptyAtDecodeTime];
+    [self configDecryptSDWebImageAtDownloadTime];
+//    [self configDecrptyAtDecodeTime];
     
     return YES;
 }

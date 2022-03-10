@@ -6,8 +6,10 @@ target 'SDWebImageEncrypt' do
   use_frameworks!
 
   # Pods for SDWebImageEncrypt
-  pod 'SDWebImage', '~> 5.0'
+  # SDWebImage 5.x
+  pod 'SDWebImage', '~> 5.12.4'
   pod 'SDWebImageWebPCoder'
+  # YYWebImage
   pod 'YYWebImage'
   pod 'YYImage/WebP'
   

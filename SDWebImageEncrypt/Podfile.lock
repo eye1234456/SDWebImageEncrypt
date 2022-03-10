@@ -25,7 +25,7 @@ PODS:
     - YYImage
 
 DEPENDENCIES:
-  - SDWebImage (~> 5.0)
+  - SDWebImage (~> 5.12.4)
   - SDWebImageWebPCoder
   - YYImage/WebP
   - YYWebImage
@@ -47,6 +47,6 @@ SPEC CHECKSUMS:
   YYImage: 1e1b62a9997399593e4b9c4ecfbbabbf1d3f3b54
   YYWebImage: 5f7f36aee2ae293f016d418c7d6ba05c4863e928
 
-PODFILE CHECKSUM: 362858a60870bb1cc9c27d7e4ba2345f9b227c66
+PODFILE CHECKSUM: 853ed5b743adca0802ffff2bde1dddecef709519
 
 COCOAPODS: 1.11.2
