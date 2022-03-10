@@ -1,24 +1,52 @@
 PODS:
+  - libwebp (1.2.1):
+    - libwebp/demux (= 1.2.1)
+    - libwebp/mux (= 1.2.1)
+    - libwebp/webp (= 1.2.1)
+  - libwebp/demux (1.2.1):
+    - libwebp/webp
+  - libwebp/mux (1.2.1):
+    - libwebp/demux
+  - libwebp/webp (1.2.1)
   - SDWebImage (5.12.4):
     - SDWebImage/Core (= 5.12.4)
   - SDWebImage/Core (5.12.4)
+  - SDWebImageWebPCoder (0.8.4):
+    - libwebp (~> 1.0)
+    - SDWebImage/Core (~> 5.10)
+  - YYCache (1.0.4)
   - YYImage (1.0.4):
     - YYImage/Core (= 1.0.4)
   - YYImage/Core (1.0.4)
+  - YYImage/WebP (1.0.4):
+    - YYImage/Core
+  - YYWebImage (1.0.5):
+    - YYCache
+    - YYImage
 
 DEPENDENCIES:
-  - SDWebImage
-  - YYImage
+  - SDWebImage (~> 5.0)
+  - SDWebImageWebPCoder
+  - YYImage/WebP
+  - YYWebImage
 
 SPEC REPOS:
   trunk:
+    - libwebp
     - SDWebImage
+    - SDWebImageWebPCoder
+    - YYCache
     - YYImage
+    - YYWebImage
 
 SPEC CHECKSUMS:
+  libwebp: 98a37e597e40bfdb4c911fc98f2c53d0b12d05fc
   SDWebImage: 631cf572cc93dfdfe54162e556410a61f1141928
+  SDWebImageWebPCoder: f93010f3f6c031e2f8fb3081ca4ee6966c539815
+  YYCache: 8105b6638f5e849296c71f331ff83891a4942952
   YYImage: 1e1b62a9997399593e4b9c4ecfbbabbf1d3f3b54
+  YYWebImage: 5f7f36aee2ae293f016d418c7d6ba05c4863e928
 
-PODFILE CHECKSUM: 2fa34ff586b9d1c4e2c68841b428f9488448fd40
+PODFILE CHECKSUM: 362858a60870bb1cc9c27d7e4ba2345f9b227c66
 
 COCOAPODS: 1.11.2

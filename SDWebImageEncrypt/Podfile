@@ -6,8 +6,11 @@ target 'SDWebImageEncrypt' do
   use_frameworks!
 
   # Pods for SDWebImageEncrypt
-  pod 'SDWebImage'
-  pod 'YYImage'
+  pod 'SDWebImage', '~> 5.0'
+  pod 'SDWebImageWebPCoder'
+  pod 'YYWebImage'
+  pod 'YYImage/WebP'
+  
 
   target 'SDWebImageEncryptTests' do
     inherit! :search_paths

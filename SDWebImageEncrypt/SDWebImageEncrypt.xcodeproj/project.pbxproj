@@ -17,8 +17,12 @@
 		57DB84C527D9CD560093DA59 /* SDWebImageEncryptTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 57DB84C427D9CD560093DA59 /* SDWebImageEncryptTests.m */; };
 		57DB84CF27D9CD560093DA59 /* SDWebImageEncryptUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 57DB84CE27D9CD560093DA59 /* SDWebImageEncryptUITests.m */; };
 		57DB84D127D9CD560093DA59 /* SDWebImageEncryptUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 57DB84D027D9CD560093DA59 /* SDWebImageEncryptUITestsLaunchTests.m */; };
-		57DB84E027D9CF950093DA59 /* TypeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 57DB84DF27D9CF950093DA59 /* TypeModel.m */; };
 		57DB84E327D9D7810093DA59 /* NSData+FE.m in Sources */ = {isa = PBXBuildFile; fileRef = 57DB84E227D9D7810093DA59 /* NSData+FE.m */; };
+		57DB84E727D9E0920093DA59 /* FEDecryptSDWebImageDownloaderOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 57DB84E627D9E0910093DA59 /* FEDecryptSDWebImageDownloaderOperation.m */; };
+		57DB84EC27D9F6DC0093DA59 /* FEDecryptSDImageIOCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 57DB84EB27D9F6DC0093DA59 /* FEDecryptSDImageIOCoder.m */; };
+		57DB84EF27D9FB050093DA59 /* FESDImageGIFCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 57DB84EE27D9FB050093DA59 /* FESDImageGIFCoder.m */; };
+		57DB84F227D9FB150093DA59 /* FESDImageAPNGCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 57DB84F127D9FB150093DA59 /* FESDImageAPNGCoder.m */; };
+		57DB84F527D9FB330093DA59 /* FESDImageWebPCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 57DB84F427D9FB330093DA59 /* FESDImageWebPCoder.m */; };
 		5F5FA9378DBB3550E5B7EFD4 /* Pods_SDWebImageEncryptTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0607911ECF1F6C7E41CA7DE5 /* Pods_SDWebImageEncryptTests.framework */; };
 		7C7C4ED0CF6630AE5C94AAB3 /* Pods_SDWebImageEncrypt_SDWebImageEncryptUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93DD695732C43771526F502C /* Pods_SDWebImageEncrypt_SDWebImageEncryptUITests.framework */; };
 		8AC4DF0BB59C8EF05F301A34 /* Pods_SDWebImageEncrypt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF5182D1EEDBE21A6FF3373F /* Pods_SDWebImageEncrypt.framework */; };
@@ -63,10 +67,19 @@
 		57DB84CA27D9CD560093DA59 /* SDWebImageEncryptUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SDWebImageEncryptUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		57DB84CE27D9CD560093DA59 /* SDWebImageEncryptUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDWebImageEncryptUITests.m; sourceTree = "<group>"; };
 		57DB84D027D9CD560093DA59 /* SDWebImageEncryptUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDWebImageEncryptUITestsLaunchTests.m; sourceTree = "<group>"; };
-		57DB84DE27D9CF950093DA59 /* TypeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TypeModel.h; sourceTree = "<group>"; };
-		57DB84DF27D9CF950093DA59 /* TypeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TypeModel.m; sourceTree = "<group>"; };
 		57DB84E127D9D7810093DA59 /* NSData+FE.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+FE.h"; sourceTree = "<group>"; };
 		57DB84E227D9D7810093DA59 /* NSData+FE.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+FE.m"; sourceTree = "<group>"; };
+		57DB84E527D9E0910093DA59 /* FEDecryptSDWebImageDownloaderOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FEDecryptSDWebImageDownloaderOperation.h; sourceTree = "<group>"; };
+		57DB84E627D9E0910093DA59 /* FEDecryptSDWebImageDownloaderOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FEDecryptSDWebImageDownloaderOperation.m; sourceTree = "<group>"; };
+		57DB84E827D9EA070093DA59 /* AESKeyHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AESKeyHeader.h; sourceTree = "<group>"; };
+		57DB84EA27D9F6DC0093DA59 /* FEDecryptSDImageIOCoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FEDecryptSDImageIOCoder.h; sourceTree = "<group>"; };
+		57DB84EB27D9F6DC0093DA59 /* FEDecryptSDImageIOCoder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FEDecryptSDImageIOCoder.m; sourceTree = "<group>"; };
+		57DB84ED27D9FB050093DA59 /* FESDImageGIFCoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FESDImageGIFCoder.h; sourceTree = "<group>"; };
+		57DB84EE27D9FB050093DA59 /* FESDImageGIFCoder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FESDImageGIFCoder.m; sourceTree = "<group>"; };
+		57DB84F027D9FB150093DA59 /* FESDImageAPNGCoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FESDImageAPNGCoder.h; sourceTree = "<group>"; };
+		57DB84F127D9FB150093DA59 /* FESDImageAPNGCoder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FESDImageAPNGCoder.m; sourceTree = "<group>"; };
+		57DB84F327D9FB330093DA59 /* FESDImageWebPCoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FESDImageWebPCoder.h; sourceTree = "<group>"; };
+		57DB84F427D9FB330093DA59 /* FESDImageWebPCoder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FESDImageWebPCoder.m; sourceTree = "<group>"; };
 		8038C56DE3117F42D9DB4C36 /* Pods-SDWebImageEncrypt-SDWebImageEncryptUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDWebImageEncrypt-SDWebImageEncryptUITests.debug.xcconfig"; path = "Target Support Files/Pods-SDWebImageEncrypt-SDWebImageEncryptUITests/Pods-SDWebImageEncrypt-SDWebImageEncryptUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		93DD695732C43771526F502C /* Pods_SDWebImageEncrypt_SDWebImageEncryptUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SDWebImageEncrypt_SDWebImageEncryptUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE565C25ED36693BE5DEFA5C /* Pods-SDWebImageEncrypt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDWebImageEncrypt.release.xcconfig"; path = "Target Support Files/Pods-SDWebImageEncrypt/Pods-SDWebImageEncrypt.release.xcconfig"; sourceTree = "<group>"; };
@@ -140,7 +153,8 @@
 		57DB84A727D9CD4C0093DA59 /* SDWebImageEncrypt */ = {
 			isa = PBXGroup;
 			children = (
-				57DB84DD27D9CF7F0093DA59 /* Model */,
+				57DB84E927D9EAD70093DA59 /* Util */,
+				57DB84E427D9E04E0093DA59 /* SDWebImageDecrypt */,
 				57DB84A827D9CD4C0093DA59 /* AppDelegate.h */,
 				57DB84A927D9CD4C0093DA59 /* AppDelegate.m */,
 				57DB84AB27D9CD4C0093DA59 /* SceneDelegate.h */,
@@ -152,8 +166,6 @@
 				57DB84B627D9CD550093DA59 /* LaunchScreen.storyboard */,
 				57DB84B927D9CD550093DA59 /* Info.plist */,
 				57DB84BA27D9CD550093DA59 /* main.m */,
-				57DB84E127D9D7810093DA59 /* NSData+FE.h */,
-				57DB84E227D9D7810093DA59 /* NSData+FE.m */,
 			);
 			path = SDWebImageEncrypt;
 			sourceTree = "<group>";
@@ -175,13 +187,47 @@
 			path = SDWebImageEncryptUITests;
 			sourceTree = "<group>";
 		};
-		57DB84DD27D9CF7F0093DA59 /* Model */ = {
+		57DB84E427D9E04E0093DA59 /* SDWebImageDecrypt */ = {
 			isa = PBXGroup;
 			children = (
-				57DB84DE27D9CF950093DA59 /* TypeModel.h */,
-				57DB84DF27D9CF950093DA59 /* TypeModel.m */,
+				57DB84F827D9FE270093DA59 /* Downloader */,
+				57DB84F727D9FE1B0093DA59 /* FECoders */,
 			);
-			path = Model;
+			path = SDWebImageDecrypt;
+			sourceTree = "<group>";
+		};
+		57DB84E927D9EAD70093DA59 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				57DB84E127D9D7810093DA59 /* NSData+FE.h */,
+				57DB84E227D9D7810093DA59 /* NSData+FE.m */,
+				57DB84E827D9EA070093DA59 /* AESKeyHeader.h */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		57DB84F727D9FE1B0093DA59 /* FECoders */ = {
+			isa = PBXGroup;
+			children = (
+				57DB84EA27D9F6DC0093DA59 /* FEDecryptSDImageIOCoder.h */,
+				57DB84EB27D9F6DC0093DA59 /* FEDecryptSDImageIOCoder.m */,
+				57DB84ED27D9FB050093DA59 /* FESDImageGIFCoder.h */,
+				57DB84EE27D9FB050093DA59 /* FESDImageGIFCoder.m */,
+				57DB84F027D9FB150093DA59 /* FESDImageAPNGCoder.h */,
+				57DB84F127D9FB150093DA59 /* FESDImageAPNGCoder.m */,
+				57DB84F327D9FB330093DA59 /* FESDImageWebPCoder.h */,
+				57DB84F427D9FB330093DA59 /* FESDImageWebPCoder.m */,
+			);
+			path = FECoders;
+			sourceTree = "<group>";
+		};
+		57DB84F827D9FE270093DA59 /* Downloader */ = {
+			isa = PBXGroup;
+			children = (
+				57DB84E527D9E0910093DA59 /* FEDecryptSDWebImageDownloaderOperation.h */,
+				57DB84E627D9E0910093DA59 /* FEDecryptSDWebImageDownloaderOperation.m */,
+			);
+			path = Downloader;
 			sourceTree = "<group>";
 		};
 		AED83BC41161B0373E248150 /* Frameworks */ = {
@@ -435,9 +481,13 @@
 				57DB84B027D9CD4C0093DA59 /* ViewController.m in Sources */,
 				57DB84E327D9D7810093DA59 /* NSData+FE.m in Sources */,
 				57DB84AA27D9CD4C0093DA59 /* AppDelegate.m in Sources */,
-				57DB84E027D9CF950093DA59 /* TypeModel.m in Sources */,
+				57DB84F527D9FB330093DA59 /* FESDImageWebPCoder.m in Sources */,
+				57DB84E727D9E0920093DA59 /* FEDecryptSDWebImageDownloaderOperation.m in Sources */,
+				57DB84F227D9FB150093DA59 /* FESDImageAPNGCoder.m in Sources */,
 				57DB84BB27D9CD550093DA59 /* main.m in Sources */,
 				57DB84AD27D9CD4C0093DA59 /* SceneDelegate.m in Sources */,
+				57DB84EF27D9FB050093DA59 /* FESDImageGIFCoder.m in Sources */,
+				57DB84EC27D9F6DC0093DA59 /* FEDecryptSDImageIOCoder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -620,6 +670,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -647,6 +698,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

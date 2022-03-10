@@ -6,8 +6,21 @@
 //
 
 #import "AppDelegate.h"
+
+#import "AESKeyHeader.h"
 #import "NSData+FE.h"
-#define kAESKey @"1234abcdABCD1234"
+
+#import <SDWebImage/SDWebImage.h>
+
+
+#import "FEDecryptSDWebImageDownloaderOperation.h"
+#import <SDWebImageWebPCoder/SDImageWebPCoder.h>
+
+#import "FEDecryptSDImageIOCoder.h"
+#import "FESDImageGIFCoder.h"
+#import "FESDImageAPNGCoder.h"
+#import "FESDImageWebPCoder.h"
+#import <SDWebImage/SDImageCodersManager.h>
 
 @interface AppDelegate ()
 
@@ -19,11 +32,36 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
 //    [self createEncryptImages];
-    
+//    [self configDecryptSDWebImageAtDownloadTime];
+    [self configDecrptyAtDecodeTime];
     
     return YES;
 }
 
+- (void)configDecryptSDWebImageAtDownloadTime {
+    // 配置支持webp图片
+    SDImageWebPCoder *webPCoder = [SDImageWebPCoder sharedCoder];
+    [[SDImageCodersManager sharedManager] addCoder:webPCoder];
+    // 配置图片下载时解密，并将解密的图片缓存到本地
+    SDWebImageDownloaderConfig.defaultDownloaderConfig.operationClass = FEDecryptSDWebImageDownloaderOperation.class;;
+
+}
+
+- (void)configDecrptyAtDecodeTime {
+    // 配置图片解码时解密，由于SDWebImage在使用时是逆序，所以这里的顺序不能乱
+    // 普通图片
+    [SDImageCodersManager.sharedManager addCoder:FEDecryptSDImageIOCoder.new];
+    // gif图片
+    [SDImageCodersManager.sharedManager addCoder:FESDImageGIFCoder.new];
+    // apng图片
+    [SDImageCodersManager.sharedManager addCoder:FESDImageAPNGCoder.new];
+    // webp图片
+    [SDImageCodersManager.sharedManager addCoder:FESDImageWebPCoder.new];
+}
+
+/**
+ 准备图片资源，原始图片+加密图片
+ */
 - (void)createEncryptImages {
     NSString *projectSourcePath = @"/Users/xxx/xx/xx/SDWebImageEncrypt";
     NSString *originFolder = @"originImage";
@@ -37,22 +75,5 @@
         [encryptData writeToFile:encryptImagePath atomically:YES];
     }
 }
-
-#pragma mark - UISceneSession lifecycle
-
-
-- (UISceneConfiguration *)application:(UIApplication *)application configurationForConnectingSceneSession:(UISceneSession *)connectingSceneSession options:(UISceneConnectionOptions *)options {
-    // Called when a new scene session is being created.
-    // Use this method to select a configuration to create the new scene with.
-    return [[UISceneConfiguration alloc] initWithName:@"Default Configuration" sessionRole:connectingSceneSession.role];
-}
-
-
-- (void)application:(UIApplication *)application didDiscardSceneSessions:(NSSet<UISceneSession *> *)sceneSessions {
-    // Called when the user discards a scene session.
-    // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
-    // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
-}
-
 
 @end
