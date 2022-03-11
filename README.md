@@ -1,12 +1,14 @@
 #前言
 > 日常开发中调试中，偶尔去其他网站上复制一个图片地址到自己的项目里调试使用，但是有些时候图片做了防盗链处理导致加载不出来，这种情况一般都是添加一个`Referer`解决，还有一些时图片加载了，但是展示不了，这可能是对图片进行了加密处理，这种就需要在下载好图片或者解码图片时进行解密处理，特对两种情况做下记录
 
+https://github.com/eye1234456/SDWebImageEncrypt
 一、图片防盗链`Referer `
 在下载图片时的header里增加正确的`Referer`即可
 
 二、图片加解密
 ----
 ###SDWebImage 5.x
+https://github.com/eye1234456/SDWebImageEncrypt/tree/sdwebimage_5.x
 podfile
 ```
   pod 'SDWebImage', '~> 5.0'
