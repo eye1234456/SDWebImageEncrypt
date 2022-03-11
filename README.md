@@ -134,4 +134,69 @@ podfile
 ```
 ----
 ###SDWebImage 4.x
+https://github.com/eye1234456/SDWebImageEncrypt/tree/sdwebimage_4.x
 大同小异，只是一些类名和方法不一致
+podfile
+```
+pod 'SDWebImage', '~> 4.4.8'
+  pod 'SDWebImage/WebP'
+  pod 'SDWebImage/GIF'
+```
+需要重写配置的类
+下载时解密：`SDWebImageDownloaderOperation`
+解码时解密：`SDWebImageImageIOCoder`
+`SDWebImageGIFCoder`
+`SDWebImageWebPCoder`
+
+----
+###YYWebImage
+https://github.com/eye1234456/SDWebImageEncrypt/tree/yywebimage
+由于YYWebImage里的代码写的比较死，不像SDWebImage一样是可以灵活配置子类，所以只能使用分类在load方法里进行方法交换处理
+podfile
+```
+  # YYWebImage
+  pod 'YYWebImage'
+  pod 'YYImage/WebP'
+```
+需要重写配置的类
+下载时解密：`YYWebImageOperation`
+
+具体实现就是重写数据下载完成时，尝试解密后读取图片类型，如果解密读取的类型是正常的，未解密的图片读取的图片不正常，则将解密后的Data数据替换未解密的Data数据
+
+```
+#import "YYWebImageOperation+FE.h"
+#import <objc/runtime.h>
+#import "AESKeyHeader.h"
+#import "NSData+FE.h"
+
+@implementation YYWebImageOperation (FE)
++ (void)load {
+#pragma clang diagnostic push
+//"-Wunused-variable"这里就是警告的类型
+#pragma clang diagnostic ignored "-Wundeclared-selector"
+    Method originMethod = class_getInstanceMethod(self, @selector(_fe_connectionDidFinishLoading:));
+    Method swizzledMethod = class_getInstanceMethod(self, @selector(connectionDidFinishLoading:));
+#pragma clang diagnostic pop
+    method_exchangeImplementations(originMethod, swizzledMethod);
+}
+- (void)_fe_connectionDidFinishLoading:(NSURLConnection *)connection {
+#pragma clang diagnostic push
+//"-Wunused-variable"这里就是警告的类型
+#pragma clang diagnostic ignored "-Wundeclared-selector"
+    if ([self respondsToSelector:@selector(data)]) {
+#pragma clang diagnostic pop
+        NSMutableData *data = (NSMutableData *)[self valueForKeyPath:@"data"];
+    // 默认对所有数据进行解密尝试
+    NSData *decodeData = [data fe_aesDecryptWithKey:kAESKey];
+    YYImageType originImageType = YYImageDetectType((__bridge CFDataRef)data);
+    YYImageType decodeImageType = YYImageDetectType((__bridge CFDataRef)decodeData);
+        if (originImageType == YYImageTypeUnknown && decodeImageType != YYImageTypeUnknown) {
+            NSMutableData *decodeDataM = [decodeData mutableCopy];
+            [self setValue:decodeDataM forKeyPath:@"data"];
+        }
+    }
+    [self _fe_connectionDidFinishLoading:connection];
+}
+@end
+
+```

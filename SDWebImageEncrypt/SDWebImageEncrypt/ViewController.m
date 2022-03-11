@@ -27,10 +27,12 @@ typedef NS_ENUM(NSInteger, LoadType) {
     [super viewDidLoad];
     [self.view addSubview:self.tableView];
     // 未加密的图片
-    NSArray *list = @[@"SDWebImage-originImage-不加密图片"
-                      ,@"SDWebImage-encryptImage-加密图片"
-                      ,@"YYImage-originImage-不加密图片"
-                      ,@"YYImage-encryptImage-加密图片"];
+    NSArray *list = @[
+        @"YYImage-originImage-不加密图片",
+        @"YYImage-encryptImage-加密图片",
+        @"SDWebImage-originImage-不加密图片",
+        @"SDWebImage-encryptImage-加密图片"
+                      ];
     for (NSString *title in list) {
         NSMutableArray *list = [NSMutableArray array];
         if ([title containsString:@"encryptImage"]) {
