@@ -200,3 +200,26 @@ podfile
 @end
 
 ```
+
+----
+YYWebImage里的YYAnimatedImageView在展示的是非动图时展示不出来，原因是单张图时`displayLayer:`没做任何处理
+参考：https://github.com/ibireme/YYWebImage/issues/242
+
+```
+- (void)displayLayer:(CALayer *)layer {
+    if (_curFrame) {
+        layer.contents = (__bridge id)_curFrame.CGImage;
+    }
+}
+```
+修改如下即可：
+
+```
+- (void)displayLayer:(CALayer *)layer {
+    if (_curFrame) {
+        layer.contents = (__bridge id)_curFrame.CGImage;
+    }else {
+        [super displayLayer:layer];
+    }
+}
+```

@@ -54,6 +54,9 @@ typedef NS_ENUM(NSInteger, LoadType) {
     }
     
     [self.tableView reloadData];
+    
+    
+    
 }
 
 #pragma mark UITableViewDataSource & UITableViewDelegate
@@ -106,12 +109,12 @@ typedef NS_ENUM(NSInteger, LoadType) {
         // 使用YYImage 加载
         UIImageView *imageView = cell.imageView;
         // YYImageView, 不能适配既可以展示动图，又展示静态图的情况
-//        imageView = [cell.contentView viewWithTag:101];
-//        if (imageView == nil) {
-//            imageView = [[YYAnimatedImageView alloc] initWithFrame:CGRectMake(0, 0, 200, 100)];
-//            imageView.tag = 101;
-//            [cell.contentView addSubview:imageView];
-//        }
+        imageView = [cell.contentView viewWithTag:101];
+        if (imageView == nil) {
+            imageView = [[YYAnimatedImageView alloc] initWithFrame:CGRectMake(0, 0, 200, 100)];
+            imageView.tag = 101;
+            [cell.contentView addSubview:imageView];
+        }
         [imageView yy_setImageWithURL:[NSURL URLWithString:urlStr] placeholder:[UIImage imageNamed:@"placeholder"]];
         cell.textLabel.text = urlStr;
         cell.textLabel.numberOfLines = 0;
