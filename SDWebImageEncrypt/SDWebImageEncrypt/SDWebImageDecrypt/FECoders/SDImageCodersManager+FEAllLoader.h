@@ -1,15 +1,15 @@
 //
-//  FESDImageGIFCoder.h
+//  SDImageCodersManager+FEAllLoader.h
 //  SDWebImageEncrypt
 //
-//  Created by eye on 3/10/22.
+//  Created by eye on 3/14/22.
 //
 
 #import <SDWebImage/SDWebImage.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface FESDImageGIFCoder : SDImageGIFCoder
+@interface SDImageCodersManager (FEAllLoader)
 
 @end
 
