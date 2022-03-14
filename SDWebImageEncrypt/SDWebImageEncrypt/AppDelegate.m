@@ -28,7 +28,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
 //    [self createEncryptImages];
-    [self configDecryptSDWebImageAtDownloadTime];
+//    [self configDecryptSDWebImageAtDownloadTime];
+    [self configDecrptyAtDecodeTime2];
 //    [self configDecrptyAtDecodeTime];
     
     return YES;
@@ -50,6 +51,11 @@
     [SDWebImageCodersManager.sharedInstance addCoder:FESDImageWebPCoder.new];
 }
 
+- (void)configDecrptyAtDecodeTime2 {
+    // 使用分类的方式，对所有的coder进行统一解密处理
+    // SDWebImageCodersManager+FEAllLoader
+ 
+}
 /**
  准备图片资源，原始图片+加密图片
  */
