@@ -32,8 +32,9 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
 //    [self createEncryptImages];
-    [self configDecryptSDWebImageAtDownloadTime];
+//    [self configDecryptSDWebImageAtDownloadTime];
 //    [self configDecrptyAtDecodeTime];
+    [self configDecrptyAtDecodeTime2];
     
     return YES;
 }
@@ -43,22 +44,28 @@
     SDImageWebPCoder *webPCoder = [SDImageWebPCoder sharedCoder];
     [[SDImageCodersManager sharedManager] addCoder:webPCoder];
     // 配置图片下载时解密，并将解密的图片缓存到本地
-    SDWebImageDownloaderConfig.defaultDownloaderConfig.operationClass = FEDecryptSDWebImageDownloaderOperation.class;;
+    //SDWebImageDownloaderConfig.defaultDownloaderConfig.operationClass = FEDecryptSDWebImageDownloaderOperation.class;;
 
 }
 
 - (void)configDecrptyAtDecodeTime {
     // 配置图片解码时解密，由于SDWebImage在使用时是逆序，所以这里的顺序不能乱
     // 普通图片
-    [SDImageCodersManager.sharedManager addCoder:FEDecryptSDImageIOCoder.new];
-    // gif图片
-    [SDImageCodersManager.sharedManager addCoder:FESDImageGIFCoder.new];
-    // apng图片
-    [SDImageCodersManager.sharedManager addCoder:FESDImageAPNGCoder.new];
-    // webp图片
-    [SDImageCodersManager.sharedManager addCoder:FESDImageWebPCoder.new];
+//    [SDImageCodersManager.sharedManager addCoder:FEDecryptSDImageIOCoder.new];
+//    // gif图片
+//    [SDImageCodersManager.sharedManager addCoder:FESDImageGIFCoder.new];
+//    // apng图片
+//    [SDImageCodersManager.sharedManager addCoder:FESDImageAPNGCoder.new];
+//    // webp图片
+    [SDImageCodersManager.sharedManager addCoder:[FESDImageWebPCoder new]];
 }
 
+- (void)configDecrptyAtDecodeTime2 {
+    // 使用分类的方式，对所有的coder进行统一解密处理
+    // SDImageCodersManager+FEAllLoader
+    // webp图片
+    [SDImageCodersManager.sharedManager addCoder:[SDImageWebPCoder sharedCoder]];
+}
 /**
  准备图片资源，原始图片+加密图片
  */

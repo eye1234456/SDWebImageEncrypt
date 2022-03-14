@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5797034E27DAF28C000BB94A /* YYWebImageOperation+FE.m in Sources */ = {isa = PBXBuildFile; fileRef = 5797034D27DAF28C000BB94A /* YYWebImageOperation+FE.m */; };
 		5797035127DB1882000BB94A /* YYAnimatedImageView+OLELayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5797035027DB1882000BB94A /* YYAnimatedImageView+OLELayer.m */; };
+		57ACFBA627DF45C10024A564 /* SDImageCodersManager+FEAllLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 57ACFBA527DF45C10024A564 /* SDImageCodersManager+FEAllLoader.m */; };
 		57DB84AA27D9CD4C0093DA59 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 57DB84A927D9CD4C0093DA59 /* AppDelegate.m */; };
 		57DB84AD27D9CD4C0093DA59 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 57DB84AC27D9CD4C0093DA59 /* SceneDelegate.m */; };
 		57DB84B027D9CD4C0093DA59 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57DB84AF27D9CD4C0093DA59 /* ViewController.m */; };
@@ -56,6 +57,8 @@
 		5797034D27DAF28C000BB94A /* YYWebImageOperation+FE.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "YYWebImageOperation+FE.m"; sourceTree = "<group>"; };
 		5797034F27DB1882000BB94A /* YYAnimatedImageView+OLELayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YYAnimatedImageView+OLELayer.h"; sourceTree = "<group>"; };
 		5797035027DB1882000BB94A /* YYAnimatedImageView+OLELayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "YYAnimatedImageView+OLELayer.m"; sourceTree = "<group>"; };
+		57ACFBA427DF45C10024A564 /* SDImageCodersManager+FEAllLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SDImageCodersManager+FEAllLoader.h"; sourceTree = "<group>"; };
+		57ACFBA527DF45C10024A564 /* SDImageCodersManager+FEAllLoader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SDImageCodersManager+FEAllLoader.m"; sourceTree = "<group>"; };
 		57DB84A527D9CD4C0093DA59 /* SDWebImageEncrypt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SDWebImageEncrypt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57DB84A827D9CD4C0093DA59 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		57DB84A927D9CD4C0093DA59 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -235,6 +238,8 @@
 				57DB84F127D9FB150093DA59 /* FESDImageAPNGCoder.m */,
 				57DB84F327D9FB330093DA59 /* FESDImageWebPCoder.h */,
 				57DB84F427D9FB330093DA59 /* FESDImageWebPCoder.m */,
+				57ACFBA427DF45C10024A564 /* SDImageCodersManager+FEAllLoader.h */,
+				57ACFBA527DF45C10024A564 /* SDImageCodersManager+FEAllLoader.m */,
 			);
 			path = FECoders;
 			sourceTree = "<group>";
@@ -505,6 +510,7 @@
 				57DB84E727D9E0920093DA59 /* FEDecryptSDWebImageDownloaderOperation.m in Sources */,
 				57DB84F227D9FB150093DA59 /* FESDImageAPNGCoder.m in Sources */,
 				57DB84BB27D9CD550093DA59 /* main.m in Sources */,
+				57ACFBA627DF45C10024A564 /* SDImageCodersManager+FEAllLoader.m in Sources */,
 				57DB84AD27D9CD4C0093DA59 /* SceneDelegate.m in Sources */,
 				57DB84EF27D9FB050093DA59 /* FESDImageGIFCoder.m in Sources */,
 				57DB84EC27D9F6DC0093DA59 /* FEDecryptSDImageIOCoder.m in Sources */,
