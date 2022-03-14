@@ -191,28 +191,11 @@ NS_ASSUME_NONNULL_END
     if (!data) {
         return nil;
     }
-    UIImage *image;
-    NSArray<id<SDImageCoder>> *coders = self.coders;
-    for (id<SDImageCoder> coder in coders.reverseObjectEnumerator) {
-        if ([coder canDecodeFromData:data]) {
-            image = [coder decodedImageWithData:data options:options];
-            if (image == nil) {
-                NSData *decodeData = [data fe_aesDecryptWithKey:kAESKey];
-                if ([coder canDecodeFromData:decodeData]) {
-                    image = [coder decodedImageWithData:decodeData options:options];
-                    break;
-                }
-            }
-            break;
-        }else{
-            NSData *decodeData = [data fe_aesDecryptWithKey:kAESKey];
-            if ([coder canDecodeFromData:decodeData]) {
-                image = [coder decodedImageWithData:decodeData options:options];
-                break;
-            }
-        }
+    UIImage *image = [self fe_decodedImageWithData:data options:options];
+    if (image == nil) {
+        NSData *decodeData = [data fe_aesDecryptWithKey:kAESKey];
+        image = [self fe_decodedImageWithData:decodeData options:options];
     }
-    
     return image;
 }
 @end
